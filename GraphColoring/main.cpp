@@ -188,9 +188,17 @@ int main() {
             break;
     }
     
+    string outfilename;
+    outfilename = filename + "_output.txt";
+    
+    ofstream fout;
+    fout.open(outfilename);
+    
     // print answer
-    cout << cur_col << endl;
-    printColors(colors);
+    fout << cur_col << endl;
+    for(int i = 0; i < colors.size(); i++)
+        fout << colors[i] << " ";
+    fout << endl;
     
     return 0;
 }
