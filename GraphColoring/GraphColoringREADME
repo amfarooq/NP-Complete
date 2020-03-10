@@ -1,1 +1,17 @@
+For The graph coloring problem (or chromatic number problem - see graph coloring pdf) I employ a recursive backtracking algorithm
 
+We start by picking our chromatic number as 1, see if that gives us a solution, if it doesn't then increment our number and try again.
+
+The way to check if it is possible to color a graph with a given chromatic number is as follows:
+1) start with our current vertex as 0 (the first vertex)
+2) then go through each of the possible colors 0 to n (where n is the chromatic number we are currently dealing with). If this color can be assigned to that node, then assign it and continue on to the next node.
+3) if no color works for that node, then backtrack to the previous node and change its color assignment to the next available color over and continue again.
+4) Do this for all nodes till we have returned true with appropriate color assignments, or returned false indicating that the current chromatic number will not work for this graph
+
+Since our algorithm goes through all chromatic numbers starting from 1, till we find one that works; the one we end up with will necessarily be the correct (i.e. the smallest possible) chromatic number for the graph.
+
+Problems with this:
+It is too exhaustive and takes a long time to complete the backtracking as the graphs get bigger than 50 vertices. To solve this I need to think of a more efficient way to eliminate smaller chromatic numbers as being impossible earlier on in the backtracking. 
+
+Alternate approaches to think about:
+We could do this the opposite way. Make each vertex a different color to begin with and cut down on the number of possible colors we can use, making changes to our graph as we do that. Something to think about. 
