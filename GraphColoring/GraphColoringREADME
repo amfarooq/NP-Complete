@@ -13,5 +13,6 @@ Since our algorithm goes through all chromatic numbers starting from 1, till we 
 Problems with this:
 It is too exhaustive and takes a long time to complete the backtracking as the graphs get bigger than 50 vertices. To solve this I need to think of a more efficient way to eliminate smaller chromatic numbers as being impossible earlier on in the backtracking. 
 
+
 Alternate approaches to think about:
 We could do this the opposite way. Make each vertex a different color to begin with and cut down on the number of possible colors we can use, making changes to our graph as we do that. Something to think about. 
