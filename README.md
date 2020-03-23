@@ -7,6 +7,6 @@ I began tackling the problems in this order, and would implore you to view my so
 3. Travelling Salesman
 4. Facility Location
 
-There is a folder for each of the different problems containing input data and my current solution for that problem. There is also a pdf with a description of the problem and a README to go along with each of the problems in their respective folders. The README folders will generally be more geared towards describing my solutions, how they work, and areas where they need improvement.
+There will a folder for each of the different problems containing input data and my current solution for that problem. There is also a pdf with a description of the problem and a README to go along with each of the problems in their respective folders. The README folders will generally be more geared towards describing my solutions, how they work, and areas where they need improvement.
 
 Enjoy!
